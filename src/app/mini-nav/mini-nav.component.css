@@ -1,22 +1,15 @@
-
-.nav-container{
-    position: absolute;
+.nav-mini {
+    background: rgb(30, 42, 99);
+    position: fixed;
+    left: 0;
     top: 0;
     bottom: 0;
-    left: 60px;
-    right: 0;
-    background: #eee;
-}
-
-.mat-sidenav {
-    background: rgb(30, 42, 99);
 }
 
 .mat-icon-button {
     margin-top: 10px;
     margin-left: 10px;
     margin-right:10px;
-    float:right;
 }
 
 .nav-upper-part {
@@ -26,6 +19,7 @@
     text-align: center;
 }
 
-.mat-list-item{
+.nav-bottom-part .mat-icon-button {
+    display: block;
     color:#bbc5f9;
 }

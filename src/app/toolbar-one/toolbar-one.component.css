@@ -1,0 +1,28 @@
+.spacer {
+    flex:1 1  auto;
+}
+
+.profile-name {
+    font-size: medium;
+    font-weight: normal;
+}
+
+.mat-menu-item .mat-icon {
+    margin-right: 4px;
+}
+
+span {
+    color: rgb(30, 42, 99);
+}
+
+.mat-icon {
+    color: rgb(30,42,99);
+}
+
+.mat-button {
+    color: rgb(30,42,99);
+}
+
+.mat-toolbar.mat-primary {
+    background: #bbc5f9;
+}
