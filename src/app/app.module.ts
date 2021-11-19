@@ -15,7 +15,6 @@ import { ToolbarOneComponent } from './toolbar-one/toolbar-one.component';
 import {MatMenuModule} from '@angular/material/menu'; 
 import {MatIconModule} from '@angular/material/icon';
 import {MatSidenavModule} from '@angular/material/sidenav';
-import { NavComponent } from './nav/nav.component';
 import { DrawerComponent } from './drawer/drawer.component';
 import {MatListModule} from '@angular/material/list';
 import { MiniNavComponent } from './mini-nav/mini-nav.component'; 
@@ -25,7 +24,6 @@ import { MiniNavComponent } from './mini-nav/mini-nav.component';
     AppComponent,
     FrameworkCheckComponent,
     ToolbarOneComponent,
-    NavComponent,
     DrawerComponent,
     MiniNavComponent
   ],

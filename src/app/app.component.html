@@ -1,11 +1,11 @@
 
-<app-mini-nav (menuclicked)="sideNav.open()"></app-mini-nav>
+<app-mini-nav [showHome]="!expandNavi" [slideState]="rotState" (menuclicked)="sideNav.open()"></app-mini-nav>
 
 <mat-sidenav-container class="nav-container" [hasBackdrop]="false">
   <mat-sidenav mode="over" position="start" #sideNav>
     
     <div class="nav-upper-part">
-      <button mat-icon-button class="menu-button" (click)="sideNav.close()">
+      <button mat-icon-button class="menu-button" (click)="sideNav.close()" [@rotateAll]="rotState==='start'?'end':'start'">
         <mat-icon>clear</mat-icon>
       </button>
     </div>
@@ -13,27 +13,21 @@
     <div class="nav-bottom-part">
       <mat-nav-list>
         <mat-list-item>
-          <mat-icon>payment</mat-icon>
           Payments
         </mat-list-item>
         <mat-list-item>
-          <mat-icon>dashboard</mat-icon>
           Dashboard
         </mat-list-item>
         <mat-list-item>
-          <mat-icon>security</mat-icon>
           Permissions
         </mat-list-item>
         <mat-list-item>
-          <mat-icon>shopping_cart</mat-icon>
           Sales
         </mat-list-item>
         <mat-list-item>
-          <mat-icon>healing</mat-icon>
           Stock Adjustments
         </mat-list-item>
         <mat-list-item>
-          <mat-icon>tune</mat-icon>
           General Codes
         </mat-list-item>
       </mat-nav-list>

@@ -4,6 +4,7 @@
     left: 0;
     top: 0;
     bottom: 0;
+    width: 60px;
 }
 
 .mat-icon-button {
@@ -21,5 +22,9 @@
 
 .nav-bottom-part .mat-icon-button {
     display: block;
+    color:#bbc5f9;
+}
+
+.mat-list-item{
     color:#bbc5f9;
 }

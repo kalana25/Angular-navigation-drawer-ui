@@ -1,29 +1,31 @@
 <div class="nav-mini">
 
     <div class="nav-upper-part">
-      <button mat-icon-button (click)="OnClicked()" >
+      <button mat-icon-button (click)="OnClicked()" [@slideDown]="slideState==='start' ?'end':'start'">
         <mat-icon>menu</mat-icon>
       </button>
     </div>
 
     <div class="nav-bottom-part">
-        <button mat-icon-button>
-            <mat-icon>payment</mat-icon>
-        </button>
-        <button mat-icon-button>
-            <mat-icon>dashboard</mat-icon>
-        </button>
-        <button mat-icon-button>
-            <mat-icon>security</mat-icon>
-        </button>
-        <button mat-icon-button>
-            <mat-icon>shopping_cart</mat-icon>
-        </button>
-        <button mat-icon-button>
-            <mat-icon>healing</mat-icon>
-        </button>
-        <button mat-icon-button>
-            <mat-icon>tune</mat-icon>
-        </button>
+        <mat-nav-list>
+            <mat-list-item>
+              <mat-icon>payment</mat-icon>
+            </mat-list-item>
+            <mat-list-item>
+              <mat-icon>dashboard</mat-icon>
+            </mat-list-item>
+            <mat-list-item>
+              <mat-icon>security</mat-icon>
+            </mat-list-item>
+            <mat-list-item>
+              <mat-icon>shopping_cart</mat-icon>
+            </mat-list-item>
+            <mat-list-item>
+              <mat-icon>healing</mat-icon>
+            </mat-list-item>
+            <mat-list-item>
+              <mat-icon>tune</mat-icon>
+            </mat-list-item>
+          </mat-nav-list>
     </div>
 </div>
